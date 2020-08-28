@@ -20,3 +20,18 @@ jobs:
         uses: mscoutermarsh/ascii-art-action@master
         with:
           text: 'HELLO!'
+  get-posts-job:
+    name: GET TDS posts
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check-out the repo under $GITHUB_WORKSPACE
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+          
+      - name: Install Scrapy
+        run: pip install scrapy
+      
+      - name: Get TDS posts about GitHub Actions
+        run: scrapy runspider posts_spider.py -o posts.json

@@ -8,6 +8,6 @@ jobs:
     - name: Print a greeting                             
       run: echo Hola jose bustamante como estas!
     - name: Show ASCII greeting                             
-        uses: mscoutermarsh/ascii-art-action@master   
-        with:                               
+        uses: mscoutermarsh/ascii-art-action@master
+        with:
           text: 'HELLO!'

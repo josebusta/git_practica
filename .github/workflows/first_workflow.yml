@@ -7,7 +7,8 @@ jobs:
     steps:                           
     - name: Print a greeting                             
       run: echo Hola jose bustamante como estas!
-    - name: Show ASCII greeting                             
-        uses: mscoutermarsh/ascii-art-action@master
-        with:
-          text: 'HELLO!'
+      
+    - name: Show ASCII greeting
+      uses: mscoutermarsh/ascii-art-action@master
+      with:
+        text: 'HELLO!'

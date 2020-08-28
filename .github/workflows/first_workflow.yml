@@ -11,4 +11,4 @@ jobs:
     - name: Show ASCII greeting
       uses: mscoutermarsh/ascii-art-action@master
       with:
-        text: 'HELLO!'
+        text: 'HELLO JOSE!'
